@@ -1,0 +1,20 @@
+{
+    "param":
+    {
+        "about_text":"Hi my name is swagat rout and I make programming tutorials on youtube! ",
+        "admin_user":"swagat",
+        "admin_password": "123", 
+        "blog_name":"Swagat",
+        "fb_url":"https://www.facebook.com/profile.php?id=100093712411845",        
+        "github_url":"https://github.com/swagatx1",
+        "gmail_user":"swagatrout02@gmail.com",
+        "gmail_pass":"kqkrxofpgmmefbei",
+        "locol_server":"True",
+        "locol_uri":"mysql://root:@localhost/learningflask",
+        "login_image":"login.svg",
+        "no_of_posts":6,
+        "prod_uri":"mysql://root:@localhost/learningflask",
+        "twitter_url":"https://twitter.com/SwagatRout13",
+        "uplode_location":"-----------location where you want to uplode the fles----------------"
+    }
+}

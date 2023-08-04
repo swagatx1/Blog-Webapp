@@ -1,0 +1,18 @@
+.parent1 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  border: 2px solid green;
+  height: 45vh;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.child {
+  background-color: gray;
+  border:2px solid black;
+  margin:12px;
+  width: 122px;
+  height:122px;
+}

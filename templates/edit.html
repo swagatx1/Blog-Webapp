@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <!-- Page Header-->
+        {% set background_url = url_for('static', filename='assets/img/home-bg.jpg') %}
+        <header class="masthead" style="background-image: url('{{ background_url }}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Admin Panel</h1>
+                            <span class="subheading">Manage your Post and Saves</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <h3>Add / Edit Post </h3>
+
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="/edit/{{sno}}" method="post">
+                    <div class="form-floating">
+                        <input class="form-control" id="title" name="title" type="text" placeholder="Enter your Title..." data-sb-validations="required" value="{{ post.title }}">
+                        <label for="title">Title</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A title is required.</div>
+                    </div>
+                
+                    <div class="form-floating">
+                        <input class="form-control" id="subheading" name="subheading" type="text" placeholder="Enter your subheading..." data-sb-validations="required,email" value="{{ post.subheading }}">
+                        <label for="subheading">Subheading</label>
+                    </div>
+                
+                    <div class="form-floating">
+                        <input class="form-control" id="slug" name="slug" type="text" placeholder="Enter your Slug number..." data-sb-validations="required" value="{{ post.slug }}">
+                        <label for="slug">Slug</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A Slug is required.</div>
+                    </div>
+                
+                    <div class="form-floating">
+                        <input class="form-control" id="content" name="content" type="text" placeholder="Enter your content..." data-sb-validations="required" value="{{ post.content }}">
+                        <label for="content">Content</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">Content is required.</div>
+                    </div>
+                                   
+
+                    <!-- <div class="form-floating">
+                        <input class="form-control" id="__" name="__" type="text" placeholder="Enter your  __..." data-sb-validations="required" />
+                        <label for="Slug"></label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required"> __ is required.</div>
+                    </div> -->
+
+                    <br />
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">SUBMIT</button>
+                </form>
+            </div>
+            <p><a href="/dashboard"><button class="btn btn-primary text-uppercase">DASHBOARD</button></a>
+                <a href="/logout"><button class="btn btn-primary text-uppercase"> Logout </button></a></p>
+        </div>
+        
+{% endblock %}
