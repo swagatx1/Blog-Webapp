@@ -1,8 +1,22 @@
-# Flask Blog with MySQL Integration
+![image](https://github.com/swagatx1/Blog-Webapp/assets/113201534/474b9cf0-bbfc-4d4f-9b56-68577453fcff)# Flask Blog with MySQL Integration
 
 ## Overview
 
 This project is a fully-functional blog application built using Flask, Bootstrap, and MySQL. The blog features a mobile-friendly layout, a user login system, a dashboard for managing blog posts and image uploads, and a contact page where users can send inquiries directly to the blog owner.
+
+## Screenshots
+### Home Page
+![image](https://github.com/swagatx1/Blog-Webapp/assets/113201534/809d358b-df98-4005-a778-3c6ce6b99c9a)
+![image](https://github.com/swagatx1/Blog-Webapp/assets/113201534/4aa1bb0c-d779-4d51-959b-5d4ad6c24a74)
+### About Me
+![image](https://github.com/swagatx1/Blog-Webapp/assets/113201534/cc33adfe-bcfa-42b9-a451-349c8794a1f9)
+
+### Contact Page
+![image](https://github.com/swagatx1/Blog-Webapp/assets/113201534/e04c9407-af4f-4308-bbe8-0e432e8a2688)
+![image](https://github.com/swagatx1/Blog-Webapp/assets/113201534/977f25a8-309b-4919-8eb0-dcf59f472162)
+### Admin login
+![image](https://github.com/swagatx1/Blog-Webapp/assets/113201534/70f9a2ed-bffa-43db-aec5-10d1430f3f4c)
+
 
 ## Features
 
