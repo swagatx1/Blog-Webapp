@@ -1,4 +1,4 @@
-![image](https://github.com/swagatx1/Blog-Webapp/assets/113201534/474b9cf0-bbfc-4d4f-9b56-68577453fcff)# Flask Blog with MySQL Integration
+# Flask Blog with MySQL Integration
 
 ## Overview
 
